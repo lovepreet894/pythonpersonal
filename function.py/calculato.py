@@ -39,7 +39,7 @@ def clculator():
         case _:
             print = ("invalid result")
 
-    while true:
+    while True:
 
 
         firto =input("do you want to do another calculation.(yes/no)!").lower()
