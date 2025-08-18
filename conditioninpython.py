@@ -12,7 +12,7 @@ elif age <27:
 elif age >38:
     print("you are a senour citizen because your age is 24",age)
 else:
-    print("you are getting close to death")
+    print("you are getting old")
 
  # taking two inputs at a time
 x, y = input("Enter two values: ").split()
@@ -31,15 +31,6 @@ print(colour)
 #number
 number = input("enter a valid number")
 
-if number <=11:
-    print("please enter a valid number")
-elif number== 9041142178:
-    print("please dismental your number")
-elif number == 8194994419:
-    print("Please dismantle your number")
-else:
-     print(number,"is confirmed")
-
 #split
 x, y = input("Enter two values: ").split()
 print("Number of boys: ", x)
@@ -55,7 +46,7 @@ def myfunc1():
   print("value z",z)
   y= z;
   print("value y",y)
-  
+
 myfunc1()
 
 print("value y",y)
@@ -241,5 +232,16 @@ print(len(a))
 
 print =input("enter 5 element of life")
 text =input
-if "water" not in text :
+if "water" not in text:
    print = ("no, answer is wrong")
+
+   number = input("enter a valid number")
+
+if number (len(11)):
+    print("please enter a valid number")
+elif number== 9041142178:
+    print("please dismental your number")
+elif number == 8194994419:
+    print("Please dismantle your number")
+else:
+     print(number,"is confirmed")
