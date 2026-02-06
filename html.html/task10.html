@@ -4,12 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TASK 10</title>
+    <style>
+    table {
+        width: 100%;
+    }
+    td, th{
+        text-align: center;
+    }
+</style>
 </head>
 <body>
     <H1>TIME TABLE</H1>
     <TAble border="1">
-        <TR>
-            <TH>DAY/PERIOD</TH>
+        <TR style="background-color: aqua;">
+            <Th>DAY/PERIOD</Th>
             <TH>9:30-10:20</TH>
             <TH>10:20-11:10</TH>
             <TH>11:10-12:00</TH>
@@ -22,19 +30,15 @@
         <TR>
             <TD>MONDAY</TD>
             <TD>ENG</TD>
+            <TD>MATH</TD>
             <TD>CHE</TD>
-            <TD></TD>
-            <TD></TD>
-            <TD>LAB</TD>
-            <TD></TD>
+            <TD rowspan="6"></TD>
+            <TD colspan="3">LAB</TD>
             <TD>PHY</TD>
         </TR>
         <TR>
             <TD>TUESDAY</TD>
-            <TD></TD>
-            <TD></TD>
-            <TD></TD>
-            <TD></TD>
+            <TD colspan="3">LAB</TD>
             <TD>ENG</TD>
             <TD>CHE</TD>
             <TD>MAT</TD>
@@ -45,29 +49,20 @@
             <TD>MAT</TD>
             <TD>PHY</TD>
             <TD>ENG</TD>
-            <TD></TD>
             <TD>CHE</TD>
-            <TD></TD>
-            <TD>LIBRARY</TD>
-            <TD></TD>
+            <TD colspan="3">LIBRARY</TD>
         </TR>
         <TR>
             <TD>THURSDAY</TD>
             <TD>PHY</TD>
             <TD>ENG</TD>
             <TD>CHE</TD>
-            <TD></TD>
-            <TD></TD>
-            <TD></TD>
-            <TD></TD>
+            <TD colspan="3">LAB</TD>
             <TD>MAT</TD>
         </TR>
         <TR>
             <TD>FRIDAY</TD>
-            <TD></TD>
-            <TD></TD>
-            <TD></TD>
-            <TD></TD>
+            <TD colspan="3">LAB</TD>
             <TD>MAT</TD>
             <TD>CHE</TD>
             <TD>ENG</TD>
@@ -78,10 +73,7 @@
             <TD>ENG</TD>
             <TD>CHE</TD>
             <TD>MATH</TD>
-            <TD></TD>
-            <TD></TD>
-            <TD></TD>
-            <TD></TD>
+            <TD colspan="3">SEMINAR</TD>
             <TD>SPORTS</TD>
         </TR>
     </TAble>
