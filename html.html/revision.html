@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p
+        {
+            display: inline;
+            /* display: none; */
+            /* visibility: hidden; */
+            width: 500px;
+            height: 200px;
+            background-color: red;
+
+        }
+        span{
+            display: block;
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+
+        }
+        span.block{
+            display: block;
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+        }
+        div.main-container{
+            width: 100px;
+            height: 500px;
+            background-color: green;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            /* align-items: center; */
+            gap: 20px;
+            /* justify-content: space-around;
+            justify-content: space-evenly;
+            justify-content: space-between; */
+            flex-direction: column;
+
+        }
+        .main-container div{
+            width: 100px;
+            height: 500px;
+            background-color: green;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div class="main-container">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+       Lorem ipsum dolor sit amet consectetur adipisicing elit.
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    </p>
+    <span>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </span>
+    <span class="block">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </span>
+
+</body>
+</html>
