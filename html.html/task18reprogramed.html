@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task18</title>
+    <style>
+        div.static{
+            height: 100px;
+            width: 100px;
+            background-color: blue;
+            top: 0%;
+            left: 0%;
+        }
+        div.box1{
+            position: relative;
+            top: 30px;
+            left: 40px;
+            height: 100px;
+            width: 100px;
+            background-color: gray;
+        }
+        div.parent{
+            position: relative;
+            height: 200px;
+            width: 200px;
+            background-color: green;
+        }
+
+        div.child{
+            position: absolute;
+            height: 100px;
+            width: 100px;
+            background-color: black;
+            top: 0;
+            right: 0;
+            color: white;
+        }
+        div.container{
+            position: relative;
+            background-color: blueviolet;
+            height: 300px;
+            width: 300px;
+
+        }
+        div.box2{
+            top: 10px;
+            left: 10px;
+            position: absolute;
+            height: 100px;
+            width: 100px;
+            background-color: brown;
+        }
+        div.box3{
+            top: 30px;
+            left: 30px;
+            position: absolute;
+            height: 100px;
+            width: 100px;
+            background-color: black;
+
+        }
+        div.container2{
+            position: relative;
+            height: 100px;
+            width: 100px;
+            background-color: yellow;
+        }
+        div.overlapping1{
+            position: absolute;
+            height: 50px;
+            width: 100px;
+            background-color: grey;
+            z-index: 2;
+            top: 0%;
+            left: 0%;
+        } 
+        div.overlapping2{
+            position: absolute;
+            height: 50px;
+            width: 100px;
+            background-color: red;
+            z-index: 1;
+            top: 50px;
+            left: 0%;
+        }
+        div.container3{
+            position: relative;
+            height: 200px;
+            width: 200px;
+            background-color: yellow;
+        }
+        div.overlapping3{
+            position: absolute;
+            height: 50px;
+            width: 100px;
+            background-color: rgb(68, 189, 57);
+            z-index: 2;
+            top: 0%;
+            left: 0%;
+        } 
+        div.overlapping4{
+            position: absolute;
+            height: 50px;
+            width: 100px;
+            background-color: rgb(160, 143, 143);
+            z-index: 1;
+            bottom: 0%;
+            right: 0%;
+        }
+        div.header{
+            top: 0%;
+            position: fixed;
+            height: 50px;
+            width: 100%;
+            background-color: darksalmon;
+            z-index: 1;
+            text-align: center;
+        }
+        div.content{
+            position:fixed;
+            background-color: black;
+            color: white;
+            z-index: 2;
+            top: 0%;
+            left: 0%;
+        }
+        div.page{
+            height: 1000px;
+            background-color: #7b0909;
+        }
+        div.sticky-box{
+            position: sticky;
+            background-color: #3c2b2b;
+            height: 20px;
+            top: 0%;
+        }
+        div.content{
+            top: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="static">static box</div>
+    <div class="box1"> box</div>
+    <br>
+    <div class="parent">
+        <div class="child">child</div>
+    </div>
+    <div class="container">
+        <div class="box2">box2</div>
+        <div class="box3">box3</div>
+    </div>
+    <div class="container2">
+        <div class="overlapping1">first box</div>
+        <div class="overlapping2">second box</div>
+    </div>
+    <div class="container3">
+        <div class="overlapping3">first box</div>
+        <div class="overlapping4">second box</div>
+    </div>
+    <div class="header">heading</div>
+    <div class="content">content is here</div>
+    <div class="page">
+        <div class="sticky-box"> sticky</div>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Esse voluptas iure sed delectus qui beatae minima magni iu</p>
+            <p>placeat nam omnis veritatis eos, sequi odit cupiditate consectetur!</p>
+        </div>
+    </div>
+
+
+</body>
+</html>

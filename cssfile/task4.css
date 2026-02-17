@@ -1,0 +1,59 @@
+div.first{
+    width: 100px;
+    height: 10vh;
+    background-color: brown;
+}
+p{
+    font-size: 2em;
+}
+div.second{
+    width: 30vw;
+    background-color: brown;
+
+}
+p.second{
+    font-size: 3rem;
+}
+h1{
+    font-size: 2rem;
+}
+div.third{
+    width: 100vw;
+    height: 100vh;
+    background-color: brown;
+}
+button.first:hover{
+    background-color: brown;
+}
+input:focus{
+    border: 2px solid  black ;
+    background-color: brown;
+}
+a:active{
+    background-color: black;
+
+}
+a:visited{
+    color: green;
+}
+ol.a li:first-child{
+    color: red;
+}
+button.second:disabled{
+    background-color: black;
+}
+h2::before{
+    content: "😁";
+}
+h3::after{
+    content: "😁";
+}
+p.second::first-letter{
+    color: red;
+}
+p.third::first-line{
+    font-style: italic 
+}
+li.zero::before{
+    content: "●";
+}
