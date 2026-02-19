@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task21</title>
+    <style>
+        div.box1{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            animation: box;
+            animation-delay: 1s;
+            animation-duration: 3s;
+        }
+        @keyframes box {
+            from{
+                transform: translateX(0px);
+            }
+            to{
+                transform: translatex(100px);
+            }
+            
+        }
+        div.circle{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: red;
+            text-align: center;
+            animation: circle;
+            animation-duration: 3s;
+            animation-delay: 1s;
+        }
+        @keyframes circle {
+            from{
+                background-color: red;
+            }
+            to{
+                background-color: blue;
+            }
+        }
+        div.rotate{
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            animation: rotate;
+            animation-duration: 9s;
+            animation-delay: 1s;
+            text-align: center;
+        }
+        @keyframes rotate {
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+            
+        }
+        div.fade{
+
+            width: 100px;
+            height: 100px;
+            background-color: brown;
+            animation: fade;
+            animation-duration: 5s;
+            animation-delay: 1s;
+        }
+        @keyframes fade {
+            from{
+                opacity: 0;
+            }
+            to{
+                opacity: 1;
+            }
+        }
+        div.pulses{
+            font-size: 100px;
+            animation: pulses infinite;
+            animation-duration: 3s;
+            animation-delay: 1s;
+        }
+        @keyframes pulses{
+            0%{
+                font-size: 100px;
+            }
+            50%{
+                font-size: 50px;
+            }
+            100%{
+                font-size: 100px;
+            }
+        }
+        div.square{
+            width: 100px;
+            height: 100px;
+            animation: square infinite;
+            animation-duration: 9s ;
+            animation-delay: 1s;
+            background-color: black;
+            color: white ;
+        }
+        @keyframes square {
+            25%{
+                background-color: red;
+            }
+            50%{
+                background-color: blue;
+            }
+            75%{
+                background-color: brown;
+            }
+            100%{
+                background-color: chocolate;
+            }
+        }
+        div.delay{
+            width: 100px;
+            height: 100px;
+            animation: first;
+            animation-delay: 5s;
+            animation-duration: 1s;
+            background-color: blueviolet;
+        }
+        @keyframes first {
+            from{
+                background-color: blueviolet;
+            }
+            to{
+                background-color: red;
+            }
+        }
+        div.infinite{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: darksalmon;
+            animation: one infinite;
+            animation-delay: 0s;
+            animation-duration: 8s;
+            transition: linear;
+        }
+        @keyframes one{
+            from{
+                transform: translateX(0px);
+            }
+            to{
+                transform: translateX(1400px);
+            }
+        }
+        div.count{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            animation: count infinite;
+            animation-delay: 1s;
+            animation-duration: 3s;
+            animation-iteration-count: 3;
+        }
+        @keyframes count {
+            from{
+                background-color: black;
+            }
+            to{
+                background-color: white;
+            }
+        }
+        div.reverse{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            animation: two infinite;
+            animation-delay: 1s;
+            animation-duration: 3s;
+            animation-direction: reverse;
+            
+        }
+        @keyframes two {
+            0%{
+                background-color: black;
+            }
+            100%{
+                background-color: white;
+            }
+        }
+        div.final{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            animation: final ;
+            animation-delay: 1s;
+            animation-duration: 3s;
+            animation-fill-mode: forwards;
+            
+        }
+        @keyframes final {
+            0%{
+                transform: translateX(0px);
+            }
+            100%{
+                transform: translateX(100px);
+                
+            }
+        }
+        div.spinner{
+            font-size: 100px;
+            animation: spinner infinite;
+            animation-duration: 8s;
+            animation-delay: 1s;
+            width: 100px;
+            height: 100px;
+            padding: 20px;
+
+        }
+        @keyframes spinner {
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+            
+        }
+        div.typewritter{
+            width: 120px;
+            height: 100px;
+            animation: typewritter;
+            animation-duration: 8s;
+            animation-delay: 1s;
+        }
+        @keyframes typewritter {
+            0%{
+                
+
+            }
+            
+        }
+        div.single{
+            width: 100px;
+            height: 100px;
+            animation: single;
+            animation-delay: 0s;
+            animation-duration: 8s;
+            background-color: purple;
+            text-align: center;
+            animation-timing-function: ease;
+        }
+        @keyframes single{
+            0%{
+                transform: translate(0px);
+                transform: rotate(0deg);
+                background-color: blueviolet;
+            }
+            50%{
+                transform: translateX(50px);
+                transform: rotate(180deg);
+                background-color: red;
+            }
+            100%{
+                transform: translateX(100px);
+                transform: rotate(360deg);
+                background-color: blue;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">box1</div>
+    <div class="circle">circle</div>
+    <div class="rotate">rotate</div>
+    <div class="fade">fades</div>
+    <div class="pulses">❤️</div>
+    <div class="square">square</div>
+    <div class="delay"> delay 5 sec</div>
+    <div class="infinite">infinite</div>
+    <div class="count">box</div>
+    <div class="reverse">reverse</div>
+    <div class="final">final</div>
+    <div class="spinner">⏳</div>
+    <div class="typewritter">h</div>
+    <div class="single">single</div>
+    
+</body>
+</html>

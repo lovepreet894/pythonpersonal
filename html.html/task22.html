@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task22</title>
+    <style>
+        :root{
+            --main-colour:#23832b;
+            --box-size:200px;
+            --button-color:#63313e;
+            --button-sec:#dc1326;
+            --backcolour:#39ff14;
+            --default-box:blue;
+            --hover-box:red;
+            --color: purple;
+            --padding:10px;
+            --radius:25%;
+            --base-font--size:30px;
+            --todistance:500px;
+            --distance:500px;
+
+        }
+        div{
+            text-align: center;
+        }
+        h1{
+            color: var(--main-colour);
+        }
+        div.box{
+            width: var(--box-size);
+            height: var(--box-size);
+            background-color: cadetblue;
+        }
+        button.first{
+            padding: 5px;
+            background-color: var(--button-color);
+            margin: var(--button-sec);
+
+        }
+        p{
+            color: var(--button-sec, black);
+        }
+        div.container{
+            height: var(--box-size);
+            width: var(--box-size);
+        }
+        div.first{
+            background-color: var(--backcolour);
+            height: 66px;
+            width: 66px;
+        }
+        div.second{
+            background-color: var(--backcolour);
+            height: 66px;
+            width: 66px;
+        }
+        div.third{
+            background-color: var(--backcolour);
+            height: 66px;
+            width: 66px;
+        }
+        div.box-color{
+            --box-color:#2c3e4a;
+            background-color: var(--box-color);
+            height: var(--box-size);
+            width: var(--box-size);
+        }
+        div.hover{
+            height: var(--box-size);
+            width: var(--box-size);
+            background-color: var(--default-box);
+        }
+        div.hover:hover{
+            height: var(--box-size);
+            width: var(--box-size);
+            background-color: var(--hover-box);
+        }
+        div.card{
+            height: var(--box-size);
+            background-color: var(--backcolour);
+            padding: var(--padding);
+            border-radius: var(--radius);
+        }
+        nav{
+            background-color: var(--box-color);
+
+        }
+        h1{
+            font-size: var(--base-font--size);
+        }
+        h2{
+            font-size: var(--base-font--size);
+        }
+        p{
+            font-size: var(--base-font--size);
+        }
+        div.move{
+            width: var(--box-size);
+            height: var(--box-size);
+            background-color: var(--color);
+            animation: move;
+            animation-delay: 1s;
+            
+        }
+        @keyframes move {
+            0%{
+                transform: translateX(--todistance);
+            }
+            100%{
+                transform: translateX(--distance);
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>text color</h1>
+    <div class="box">box</div>
+    <button class="first">button</button>
+    <p>paragraph</p>
+    <div class="container">
+        <div class="first">first</div>
+        <div class="second">second</div>
+        <div class="third">third</div>
+    </div>
+    <div class="box-color"> box2;it does not work outside this div</div>
+    <div class="hover">hover box</div>
+    <div class="card">card</div>
+    <nav>navbar</nav>
+    <h1>heading</h1>
+    <h2>heading2</h2>
+    <p>paragraph</p>
+    <div class="move">moving</div>
+</body>
+</html>
+11 12 13 14
