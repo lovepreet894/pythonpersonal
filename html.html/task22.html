@@ -18,8 +18,9 @@
             --radius:25%;
             --base-font--size:30px;
             --todistance:500px;
-            --distance:500px;
-
+            --move-distance:500px;
+            --form-size:600px;
+            --input-color:#8e00ff;
         }
         div{
             text-align: center;
@@ -92,7 +93,7 @@
         h2{
             font-size: var(--base-font--size);
         }
-        p{
+        p.yo{
             font-size: var(--base-font--size);
         }
         div.move{
@@ -101,17 +102,31 @@
             background-color: var(--color);
             animation: move;
             animation-delay: 1s;
+            animation-duration: 6s;
             
         }
         @keyframes move {
             0%{
-                transform: translateX(--todistance);
+                transform: translateX(0);
             }
             100%{
-                transform: translateX(--distance);
+                transform: translateX(var(--move-distance));
             }
         }
-        
+        div.form{
+            width: var(--form-size);
+            background-color: var(--backcolour);
+            text-align: left;
+        }
+        input:focus{
+            border: 2px solid var(--input-color);
+        }
+        input{
+            border: 2px solid var(--button-color);
+        }
+        button{
+            background-color: var(--button-sec);
+        }        
     </style>
 </head>
 <body>
@@ -130,8 +145,22 @@
     <nav>navbar</nav>
     <h1>heading</h1>
     <h2>heading2</h2>
-    <p>paragraph</p>
+    <p class="yo">paragraph</p>
+    <p class="wow">problem in 11</p>
     <div class="move">moving</div>
+
+    <div class="form">
+        <label for="text">name</label>
+        <input type="text">
+        <br>
+        <label for="email">email</label>
+        <input type="email">
+        <br>
+        <label for="phone number">phone number</label>
+        <input type="number">
+        <br>
+        <button>submit</button>
+        
+    </div>
 </body>
 </html>
-11 12 13 14

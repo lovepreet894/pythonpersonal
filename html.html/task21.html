@@ -236,6 +236,28 @@
             }
             
         }
+        div.typewritter{
+            width: 0;
+            /* background-color: aquamarine; */
+            animation: typewritter;
+            animation-duration: 7s;
+            animation-delay: 1s;
+            /* border: 1px solid black; */
+            overflow: hidden;
+            animation-timing-function: steps(30,end);
+            animation-fill-mode: forwards;
+            white-space: nowrap;           
+            
+        }
+        @keyframes typewritter {
+            0%{
+                width: 0;
+                
+            }
+            100%{
+                width: 250px;
+            }
+        }
         div.single{
             width: 100px;
             height: 100px;
@@ -279,7 +301,7 @@
     <div class="reverse">reverse</div>
     <div class="final">final</div>
     <div class="spinner">⏳</div>
-    <div class="typewritter">h</div>
+    <div class="typewritter">hello how are you. doing fine.</div>
     <div class="single">single</div>
     
 </body>
