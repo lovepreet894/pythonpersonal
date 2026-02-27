@@ -1,19 +1,272 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task23</title>
+    <style>
+    body{
+        background-color: blue;
+    }   
+    @media (max-width: 992px){
+        body{
+            background-color: red;
+        }
+    }
+    @media (max-width: 576px){
+        body{
+            background-color: green;
+        }
+    }
+    /* task 4 */
+    nav{
+        background-color: darkblue;
+    }
+    ul{
+        list-style: none;
+        display: flex;
+        justify-content: center;
+    }
+    li{
+        padding: 10px;
+    }
+    @media(max-width: 576px){
+        nav ul{
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    
+
+    /* task 2 */
+            h1{
+            font-size: 40px;
+        }
+    @media (max-width:992px){
+        h1{
+            font-size: 30px;
+        }
+        
+    }
+    @media (max-width: 576px){
+        h1{
+            font-size: 20px;
+        }
+    }
+    /* task 3 */
+    div.container{
+        height: 300px;
+    }    
+    div.first{
+        background-color: blueviolet;
+    }
+    div.second{
+        background-color: brown;
+    }
+    div.third{
+        background-color: chocolate;
+    }
+    @media (max-width:1920px){
+        .container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        }
+    }
+    @media (max-width: 992px){
+        .container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    @media (max-width: 576px){
+        .container{
+        grid-template-columns: 1fr;
+        }
+    }
+    /* task 5 */
+    img{
+        width: 600px;
+    }
+    @media(max-width: 992px){
+        img{
+            width: 400px;
+        }
+    }
+    @media(max-width: 576px){
+        img{
+            width: 100%
+        }
+    }
+
+    div.dont img{
+        width: 600px;
+    }
+    @media(max-width: 992px){
+        div.dont img{
+            width: 400px;
+        }
+    }
+    @media(max-width: 576px){
+        div.dont img{
+            width: 100%;
+        }
+    }
+    div.photo{
+        width: 300px;
+        background-color: aquamarine;
+    }
+    div.photo img{
+        margin-left: 50px;
+        width: 200px;
+        justify-content: center;
+    }div.photo div{
+        text-align: center;
+        
+    }
+    .pcontainer{
+        display: grid;
+        width: max-content;
+        grid-template-columns: repeat(4 ,1fr);
+    }       
+     
+    @media(max-width: 992px){
+        .pcontainer{
+            grid-template-columns: repeat(2 ,1fr);
+        }
+    }
+    @media(max-width: 576px){
+        .pcontainer{
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+    button{
+        padding: 15px 30px;
+    }
+    @media(max-width: 576px){
+        button{
+            padding: 8px 15px;
+        }
+    }
+    div.display{
+        display: flex;
+        background-color: cadetblue;
+        width: 200px;
+    }
+    div.box{
+        background-color: black;
+        width: 200px;
+    }
+    @media(max-width: 576px){
+        div.display{
+            display: block;
+        }
+    }
+    p.para{
+        text-align: left;
+    }
+    @media(max-width: 576px){
+        p.para{
+            text-align: center;
+        }
+    }
+    div.gridpic{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
+    @media(max-width:992px){
+        div.gridpic{
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+    @media(max-width:576px){    
+        div.gridpic{
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+    form {
+        display: grid;
+        grid-template-columns: repeat(2 ,1fr);
+    }
+    @media(max-width: 576px){
+        form{
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+    </style>
 </head>
 <body>
+    <nav>
+        <ul class="list">
+            <li>home</li>
+            <li>menu</li>
+            <li>about</li>
+            <li>help</li>
+        </ul>
+    </nav>
+    <h1>changge the colour</h1>
+    <div class="container">
+        <div class="first">first</div>
+        <div class="second">second</div>
+        <div class="third">third</div>
+    </div>
+    <div class="dont">
+        <img src="/photoshtml/ChatGPT Image Feb 24, 2026, 11_43_39 PM.png" alt="">
+    </div>
 
-<h2>Show Different Images Depending on Browser Width</h2>
-<p>Resize the browser width and the image will change at 600px and 1500px.</p>
+    <div class="pcontainer">
+    <div class="photo">
+        <img src="/photoshtml/ChatGPT Image Feb 24, 2026, 11_43_18 PM.png" alt="">
+        <div>
+            <h1>LOVEPREET SINGH</h1>
+            <p>I AM A STUDENT OF LGC COLLEGE.THANK YOU</p>
+        </div>
+    </div>
+    <div class="photo">
+        <img src="/photoshtml/ChatGPT Image Feb 24, 2026, 11_43_18 PM.png" alt="">
+        <div>
+            <h1>LOVEPREET SINGH</h1>
+            <p>I AM A STUDENT OF LGC COLLEGE.THANK YOU</p>
+        </div>
+    </div>
+    <div class="photo">
+        <img src="/photoshtml/ChatGPT Image Feb 24, 2026, 11_43_18 PM.png" alt="">
+        <div>
+            <h1>LOVEPREET SINGH</h1>
+            <p>I AM A STUDENT OF LGC COLLEGE.THANK YOU</p>
+        </div>
+    </div>
+    <div class="photo">
+        <img src="/photoshtml/ChatGPT Image Feb 24, 2026, 11_43_18 PM.png" alt="">
+        <div>
+            <h1>LOVEPREET SINGH</h1>
+            <p>I AM A STUDENT OF LGC COLLEGE.THANK YOU</p>
+        </div>
+    </div>
 
-<picture>
-  <img src="/photoshtml/PHOTO.jpeg.jpeg" alt="" media="(max-width: 600px)">
-  <img src="/photoshtml/PHOTO.jpeg.jpeg" alt="" media="(max-width: 1500px)">
-</picture>
 
+
+    </div>
+    <button>button</button>
+    
+    <div class="display">
+        <div>box</div>
+    </div>
+    <p class="para">text align</p>
+    <p>task 11 already done in uper photo</p>
+    <div class="gridpic">
+        <img class="foto" src="/photoshtml/darkness.jpeg.webp" alt="">
+        <img class="foto" src="/photoshtml/darkness.jpeg.webp" alt="">
+        <img class="foto" src="/photoshtml/darkness.jpeg.webp" alt="">
+        <img class="foto" src="/photoshtml/darkness.jpeg.webp" alt="">
+        <img class="foto" src="/photoshtml/darkness.jpeg.webp" alt="">
+    </div>
+    <form>
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+    </form>
+    
 </body>
 </html>
-
-
