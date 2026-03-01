@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav{
+            background-color: gray;
+            width: 100%;
+        }
+        div.container{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        ul{
+            
+            list-style: none;
+            display: flex;
+            gap: 10px;
+            
+        }
+        li{
+             color: white;
+        }
+        li:hover{
+            color: red;
+            animation: anime;
+            animation-duration: 8s;
+        }
+        @keyframes anime {
+            0%{
+                color: green;
+            }
+            50%{
+                color: blue;
+            }
+            100%{
+                color: black;
+            }
+        }
+        button.menu-btn{
+            display: none;
+            background-color: darkslategray;
+        }
+        @media (max-width:768px) {
+            ul{
+                display: none;
+                
+            }
+            button.menu-btn{
+                display: block;
+            }
+        }
+        section{
+            height: 100vh;
+        }
+        .hero{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background: url(/photoshtml/darkness.jpeg.webp) center/cover  no-repeat
+        }
+        /* .hero {
+                position: relative;
+                color: white;
+            }
+            .hero::before {
+                content: "";
+                position: absolute;
+                inset: 0;
+                background: rgba(0, 0, 0, 0.5);
+            } */ 
+        div.hero-content {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            text-align: center;
+            height: 100vh;
+        }
+        /* .hero-content {
+    position: relative;
+    z-index: 1;
+    }    */
+
+        button:hover{
+            background-color: aqua;
+            color: red;
+            border: 1px double black;
+        }
+        /* .hero h1 {
+    font-size: 50px;
+}
+
+.hero p {
+    font-size: 18px;
+} */
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+
+            <img  src="/photoshtml/WhatsApp Image 2026-02-23 at 4.50.12 PM.jpeg" width="35px" height="35px">
+            <ul>
+                <li>feature</li>
+                <li>product</li>
+                <li>store</li>
+                <li>galary</li>
+                <li>help</li>
+                <li>find</li>
+            </ul>
+            <button class="menu-btn">☰</button>    
+        </div>
+    </nav>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to My Website</h1>
+            <p>This is a clean centered hero section.</p>
+            <button>Get Started</button>
+        </div>
+    </section>
+
+</body>
+</html>
