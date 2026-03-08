@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body{
+            width: 100%;
+        }
+        nav.firstnav{
+            background-color: rgb(55, 50, 50);
+            height: 25px;
+            height: 30px;
+            border-radius: 7px;
+        }
+        div.navbar{
+            display: flex;
+            justify-content: space-between;
+            padding: 4PX;
+            
+        }
+        .first{ 
+            display: flex;
+            flex-direction: row;
+            gap: 5px;
+        }
+        .colorlib{
+            color: white;
+        }
+        .solestyle{
+            color: white;
+            background-color: rgb(24, 23, 23);
+            height: 22px;
+        }
+        .second{
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+        }
+        i{
+            padding: 5px;
+            cursor: pointer;
+        }
+        i:hover{
+            background-color: gray;
+            color: green;
+            border-radius: 4px;
+        }
+        div.code{
+            display: flex;
+            background-color: orangered;
+            color: white;
+            height: 20px;
+            justify-content: center;
+
+        }
+        nav.navsec{
+            display: flex;
+            width: 85%;
+            align-items: center;
+            justify-content: space-evenly;
+            margin: auto;
+        }
+        .logo{
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        img.log{
+            width: 25px;
+            height: 33px;
+        }
+        div.menu{
+            display: flex;
+            gap: 10px;
+        }
+        div.icon-group{
+            gap: 10px;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        div.layerone{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+        }
+        div.shop{
+            width: 85%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        div.layerone{
+            display: flex;
+            width: 100%;
+        }
+        a.view{
+            padding-top: 40px;
+            color: orangered;
+        }
+        .gallery{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            
+            gap: 15px;
+            width: 85%;
+            justify-content: center;
+            align-content: center;
+            margin: auto;
+        }
+        .card{
+            position: relative;
+            width: 300px;
+            height: 200px;
+            border-radius: 15px;
+        }
+        .card img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .content{
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            color: white;
+            z-index: 2;
+        }
+        .content a{
+            text-decoration: none;
+            color: white;
+        }
+        .product{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* 4 cards per row */
+            gap: 25px;
+            flex: 3;
+        }
+        img.lol{
+            width: 100%;
+        }
+        section{
+            width: 85%;
+            display: flex;
+            justify-content: center;
+            margin: auto;
+        }
+        .container-four{
+            width: 85%;
+            display: flex;
+            flex-direction: row;
+            margin: auto;
+            gap: 15px;
+        }
+        .info{
+            justify-content: center;
+            align-items: center;
+        }
+        .review{
+            background-color: rgb(0,0,22);
+            color:white;
+            padding:80px 0;
+            text-align:center;
+        }
+        .comments{
+            width:85%;
+            margin:auto;
+            margin-top:40px;
+            display:grid;
+            grid-template-columns:repeat(3,1fr);
+            gap:25px;
+        }
+        .comment{
+             background:#0b1730;
+             padding:25px;
+             border-radius:12px;
+             text-align:left;
+        }
+        .stats{
+            width:85%;
+            margin:60px auto 0;
+            display:flex;
+            justify-content:space-around;
+            border-top:1px solid #1b2945;
+            padding-top:40px;
+        }
+        .footersec{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .shop{
+            display: flex;
+            flex-direction: column;
+        }
+        .help{
+            display: flex;
+            flex-direction: column;
+        }
+        .head{
+            display: flex;
+            flex-direction: row;
+        }
+        div.footer{
+            display: flex;
+            width: 85%;
+            justify-content: center;
+            margin: 50px;
+            flex-direction: column;
+        }
+        .down{
+            margin: 0%;
+            padding-top: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="firstnav">
+        <div class="navbar">
+            <div class="first">
+                <span class="colorlib">colorlib.</span>
+                <span class="solestyle">+solestyle</span>
+            </div>
+            <div class="second">
+                <i class="fa-solid fa-desktop"></i>
+                <i class="fa-solid fa-tablet-screen-button"></i>
+                <i class="fa-solid fa-mobile-screen"></i>
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-cart-shopping active"></i>
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        </div>
+    </nav>
+    <div class="code">Free shipping on order over $57 use code STRIDE20 for 20% off your first order</div>
+    <div class="smallbox">
+        <nav class="navsec">
+            <div class="logo">
+                <img class="log" src="/photoshtml/Screenshot 2026-03-01 232747.png" alt="">
+                <span>STRIDE</span>
+            </div>
+            <div class="menu">
+                    <a href="#">shop</a>
+                    <a href="#">Categories</a>
+                    <a href="#">New Arrivals</a>
+                    <a href="#">sale</a>
+                    <a href="#">about</a>
+            </div>
+            <div>
+                <div class="icon-group">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-regular fa-moon"></i>
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- image -->
+    <img class="big" src="/photoshtml/Screenshot 2026-03-05 131229.png" alt="" width="100%">
+    <div class="layerone">
+        <div class="shop">
+            <div class="shopbox">
+                <h1>Shop by Category</h1>
+                <p>Find the prefect pair for every Occasion</p>
+            </div>
+            <a class="view" href="#">view all ></a>
+        </div>
+    </div>
+
+    <!-- gallery -->
+    <div class="gallery">
+        <div class="card">
+            <img src="/photoshtml/boots 2026-03-02 143520.png" alt="">
+
+        <div class="content">
+            <span>48 Products</span>
+            <h2>Running</h2>
+            <p>Performance shoes built for speed and endurance</p>
+            <a href="#">Shop Now -></a>
+        </div>
+        </div>
+
+        <div class="card">
+            <img src="/photoshtml/boots 2026-03-02 143520.png" alt="">
+
+        <div class="content">
+            <span>86 Products</span>
+            <h2>Sneakers</h2>
+            <p>Classic and contemporary streetwear style</p>
+            <a href="#">Shop Now -></a>
+        </div>
+        </div>
+
+        <div class="card">
+            <img src="/photoshtml/boots 2026-03-02 143520.png" alt="">
+
+        <div class="content">
+            <span>32 Products</span>
+            <h2>Basketball</h2>
+            <p>Court-ready shoes with superior ankle support</p>
+            <a href="#">Shop Now -></a>
+        </div>
+        </div>
+
+        <div class="card"> 
+            <img src="/photoshtml/boots 2026-03-02 143520.png" alt="">
+
+        <div class="content">
+            <span>64 Products</span>
+            <h2>Casual</h2>
+            <p>Everyday comfort meets effortless style</p>
+            <a href="#">Shop Now -></a>
+        </div>
+        </div>
+
+        <div class="card">
+            <img src="/photoshtml/boots 2026-03-02 143520.png" alt="">
+
+        <div class="content">
+            <span>28 Products</span>
+            <h2>Boots</h2>
+            <p>Rugged style for any terrain</p>
+            <a href="#">Shop Now -></a>
+        </div>
+        </div>
+
+        <div class="card">
+            <img src="/photoshtml/boots 2026-03-02 143520.png" alt="">
+
+        <div class="content">
+            <span>24 Products</span>
+            <h2>Sandals</h2>
+            <p>Breathable comfort for warmer days</p>
+            <a href="#">Shop Now -></a>
+        </div>
+        </div>
+    </div>
+    <div class="layerone">
+        <div class="shop">
+            <div class="shopbox">
+                <h1>Featured Collection</h1>
+                <p>our most popular style handpicked for you</p>
+            </div>
+            <a class="view" href="#">view all Featured></a>
+        </div>
+    </div>
+    <section class="product">
+                    <div class="items">
+                        <img class="lol" src="/photoshtml/boots 2026-03-02 143520.png" alt="">
+                        <div>
+                            <p>  running</p>
+                            <p><b>velocity running pro</b></p>
+                            <p>$179  <del>$219</del></p> 
+                        </div>
+                    </div>
+                    <div class="items">
+                        <img class="lol" src="/photoshtml/Screenshot 2026-03-02 185022.png" alt="">
+                        <div>
+                            <p>  snaekers</p>
+                            <p><b>streetwise classsic</b></p>
+                            <p>$129</p> 
+                        </div>
+                    </div>
+                    <div class="items">
+                        <img class="lol" src="/photoshtml/Screenshot 2026-03-02 185045.png" alt="">
+                        <div>
+                            <p>basketball</p>
+                            <p><b>court dominator X</b></p>
+                            <p>$199</p> 
+                        </div>
+                    </div>
+                    <div class="items">
+                        <img class="lol" src="/photoshtml/Screenshot 2026-03-02 185103.png" alt="">
+                        <div>
+                            <p>boots</p>
+                            <p><b>trail blazer GTX</b></p>
+                            <p>$189</p> 
+                        </div>
+                    </div>
+                    <div class="items">
+                        <img class="lol" src="/photoshtml/Screenshot 2026-03-02 185112.png" alt="">
+                        <div>
+                            <p>  running</p>
+                            <p><b>Marathon elite</b></p>
+                            <p>$249</p> 
+                        </div>
+                    </div>
+                    <div class="items">
+                        <img class="lol" src="/photoshtml/Screenshot 2026-03-02 185117.png" alt="">
+                        <div>
+                            <p> sandals</p>
+                            <p><b>cloud 9 recovery</b></p>
+                            <p>$59</p> 
+                        </div>
+                    </div>
+                    <div class="items">
+                        <img class="lol" src="/photoshtml/Screenshot 2026-03-02 185123.png" alt="">
+                        <div>
+                            <p> sneakers</p>
+                            <p><b>court legecy low</b></p>
+                            <p>$99</p> 
+                        </div>
+                    </div>
+                    <div class="items">
+                        <img class="lol" src="/photoshtml/Screenshot 2026-03-02 185132.png" alt="">
+                        <div>
+                            <p>casual</p>
+                            <p><b>comfort walk daily</b></p>
+                            <p>$89</p> 
+                        </div>
+                    </div>
+    </section>
+        <hr>
+        <div class="container-four">
+            <div class="info">
+                <img src="" alt="">
+                <h3>Free Shipping</h3>
+                <p>free standard shipping on all order over $75. Express option available.</p>
+            </div>
+            <div class="info">
+                <img src="" alt="">
+                <h3>60-day Return</h3>
+                <p>change your mind? Return unworn items within 60 days, no questiion asked.</p>
+            </div>
+            <div class="info">
+                <img src="" alt="">
+                <h3>Size Guarantee</h3>
+                <p>not the right fit? Exchange for a different size at no extra cost.</p>
+            </div>
+            <div class="info">
+                <img src="" alt="">
+                <h3>Secure Checkout</h3>
+                <p>Your payment information is encrypted and secure. Shop with confidence.</p>
+            </div>
+        </div>
+    <div class="layerone">
+        <div class="shop">
+            <div class="shopbox">
+                <h1>New Arrivals</h1>
+                <p>Fresh style just landed - be the first to rock them</p>
+            </div>
+            <a class="view" href="#">Shop New Arrivals</a>
+        </div>
+    </div>
+    <section class="product">
+        <div class="items">
+            <img class="lol" src="/photoshtml/Screenshot 2026-03-02 185141.png" alt="">
+            <div>
+                <p>sandals</p>
+                <p><b>summer slide sport</b></p>
+                <p>$49</p> 
+            </div>
+        </div>
+        <div class="items">
+            <img class="lol" src="/photoshtml/Screenshot 2026-03-02 185148.png" alt="">
+            <div>
+                <p>sneakers</p>
+                <p><b>retro runner 87</b></p>
+                <p>$119</p> 
+            </div>
+        </div>
+        <div class="items">
+            <img class="lol" src="/photoshtml/Screenshot 2026-03-02 185155.png" alt="">
+            <div>
+                <p>running</p>
+                <p><b>GYM trainer 360</b></p>
+                <p>$139</p> 
+            </div>
+        </div>
+        <div class="items">
+            <img class="lol" src="/photoshtml/Screenshot 2026-03-02 185204.png" alt="">
+            <div>
+                <p>casual</p>
+                <p><b>slip-on lounge</b></p>
+                <p>$69</p> 
+            </div>
+        </div>
+    </section>
+    <div class="review">
+
+    <button>Customer Love</button>
+    <h2>What Our Customer Say</h2>
+    <p>Join thousand of happy customers who have made stride their go-to footwear brand</p>
+
+    <div class="comments">
+
+        <div class="comment">
+            <p>Stride has completely transformed my running experience. The Velocity Runner Pro helped me PR at my last marathon by 8 minutes.</p>
+            <h4>Marcus Chen</h4>
+            <p>Marathon Runner</p>
+        </div>
+
+        <div class="comment">
+            <p>I wear Stride shoes for all my classes. They are versatile, stylish and my feet never hurt after training.</p>
+            <h4>Emily Rodriguez</h4>
+            <p>Fitness Instructor</p>
+        </div>
+
+        <div class="comment">
+            <p>The quality and attention to detail is unmatched. Stride has become my go-to sneaker brand.</p>
+            <h4>David Kim</h4>
+            <p>Sneaker Enthusiast</p>
+        </div>
+
+    </div>
+
+    <div class="stats">
+        <div>
+            <h1>50K+</h1>
+            <p>Happy Customers</p>
+        </div>
+
+        <div>
+            <h1>4.9/5</h1>
+            <p>Average Rating</p>
+        </div>
+
+        <div>
+            <h1>15K+</h1>
+            <p>5-Star Reviews</p>
+        </div>
+
+        <div>
+            <h1>98%</h1>
+            <p>Would Recommend</p>
+        </div>
+    </div>
+    </div>
+    <hr>
+        <div class="footer">
+            <span><h3>Join The Stride Club</h3></span> 
+            <br>
+            <p>Get 15% off your first order, plus early access to new drops.</p>
+            <div class="mail">
+                <input type="email"  value="Enter Your Email" >
+                <button class="sub">subscribe</button>
+            </div>
+        </div>
+        <hr 2px>
+        <div class="footersec">
+            <div class="leg">
+                <div class="head">
+                    <img style="width: 25px; height: 27px;" src="/photoshtml/Screenshot 2026-03-01 232747.png" alt="">
+                    <h3 class="down"> STRIDE</h3>
+                </div>
+                <p>premium footwear for every step of your journey. <br> from athletic performance to everyday comfort</p>
+            </div>
+            <div>
+                <h3>Shop</h3>
+                <div class="shop">
+                    <a href="#">Running</a>
+                <a href="#">Sneakers</a>
+                <a href="#">Basketball</a>
+                <a href="#">Casual</a>
+                <a href="#">Boots</a>
+                <a href="#">Sandals</a>
+                </div>
+            </div>
+            <div>
+                <h3>Help</h3>
+                <div class="help">
+                    <a href="#">FAQ</a>
+                    <a href="#">Shipping & Return</a>
+                    <a href="#">Size Guide</a>
+                    <a href="#">Contact Us</a>
+                    <a href="#">Track Order</a>
+                </div>
+            </div>
+            <div>
+                <h3>About</h3>
+                <div class="about">
+                    <a href="#">Our Story</a>
+                <a href="#">Sustainability</a>
+                <a href="#">Athletes</a>
+                <a href="#">Careers</a>
+                <a href="#">Store Locator</a>
+                </div>
+            </div>
+        </div>
+        <hr>
+    
+</body>
+</html>
