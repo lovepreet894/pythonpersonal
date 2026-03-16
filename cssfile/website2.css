@@ -141,4 +141,153 @@ a{
     justify-content: left;
     z-index: 1;
     width: 50%;
+    margin-left: 50px;
+}
+.hero-section .written{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 300px;
+}
+.hero-section .group-image{
+    display: grid;
+    overflow: hidden;
+    margin: 30px 30px 180px 30px;
+    grid-template-columns: repeat(3, 1fr);
+}
+.hero-section .group-image .cards{
+    position: relative;
+}
+.hero-section .group-image .cards div{
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
+.hero-section .group-image .cards .modals{
+    width: 100%;
+    height: 700px;
+}
+.hero-section .small-container{
+    margin: 200px;
+}
+.hero-section .small-container .comments-heading{
+    text-align: center;
+}
+.hero-section .small-container .comments-heading .ourlatest{
+    color: orangered;
+}
+.hero-section .small-container .comments-heading .pcenter{
+    text-align: center;
+    max-width: 600px;
+    margin: auto;
+}
+.hero-section .small-container .comments{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+}
+.hero-section .small-container .comments .comment{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    gap: 20px;
+}
+.hero-section .small-container .comments .comment img{
+    height: 50px;
+    width: 50px;
+    border-radius: 30px;
+}
+.hero-section .small-container .events{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 40px;
+}
+.hero-section .small-container .events .event-video{
+    width: 50%;
+}
+.hero-section .small-container .events .event-video video{
+    width: 100%;
+    height: 700px;
+}
+.hero-section .small-container .events .event-details{
+    width: 50%;
+    align-items: center;
+}
+.hero-section .small-container .three-pic{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.hero-section .small-container .three-pic .sub-pic{
+    position: relative;
+    margin-top: 40px;
+}
+
+.hero-section .small-container .three-pic .sub-pic img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+.hero-section .small-container .three-pic .sub-pic .insidepic{
+    position: absolute;
+    bottom: 60px;
+    left: 15px;
+    color: white;
+    font-size: 14px;
+    color: black;
+}
+
+.hero-section .small-container .three-pic .sub-pic .titlepic{
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+}
+
+.hero-section .small-container .three-pic .sub-pic .titlepic h4{
+    margin: 0;
+}
+.footer{
+    height: 500px;
+    background-color: rgb(216, 90, 90);
+}
+.footer .footer-details{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 100px;
+    
+}
+.footer .footer-details .box{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: center;
+}
+.footer .footer-details .box h4{
+    color: white;
+}
+.footer .footer-details .box p{
+    color: pink;
+}
+.footer .footer-details .box .link{
+    display: block;
+    color: pink;
+}
+.footer .lastline{
+    text-align: center;
+    color: pink;
 }
