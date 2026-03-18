@@ -102,7 +102,15 @@ a{
 .section-content .header-content .content-section{
     flex: 1;
 }
-.section-content .header-content .content-aside input,textarea{
+.section-content .header-content .content-aside textarea{
+    width: 99%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.section-content .header-content .content-aside input{
     width: 99%;
     height: 50px;
     display: flex;
@@ -149,4 +157,65 @@ a{
 .footer .footer-details .box .link{
     display: block;
     color: pink;
+}
+
+@media (max-width: 768px){
+.navbar{
+    flex-direction: column;
+    gap: 20px;
+}
+
+.navbar-menu{
+    flex-direction: column;
+}
+.img-center{
+    padding: 120px 20px;
+    text-align: center;
+}
+.hero-section .section-content{
+    width: 90%;
+}
+
+.hero-section .section-content .hero-details .details{
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hero-section .section-content .hero-details .details .sub-details{
+    width: 100%;
+}
+.hero-section .section-content .header-content{
+    flex-direction: column;
+}
+.section-content .header-content .content-aside button{
+    margin-top: 20px;
+}
+.footer{
+    height: auto;
+}
+
+.footer .footer-details{
+    flex-direction: column;
+    gap: 40px;
+    padding: 50px 20px;
+}
+
+.footer .footer-details .box{
+    width: 100%;
+}
+}
+@media (max-width: 1024px){
+
+.hero-section .section-content{
+    width: 90%;
+}
+
+.hero-section .section-content .hero-details .details{
+    flex-wrap: wrap;
+}
+
+.hero-section .section-content .hero-details .details .sub-details{
+    width: 45%;
+}
+
 }
