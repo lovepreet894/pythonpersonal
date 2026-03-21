@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Miniver&family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+header{
+    background-image: url(/photoshtml/navbarmodel.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 700px;
+}
+/* navbar link */
+header .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+.navbar .navbar-menu{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.navbar .navbarmain .topmodel{
+    color: white;
+}
+.navbar .navbar-menu .nav-list .nav-item{
+    color: white;
+}
+.navbar .navbar-menu .nav-list .nav-item:hover{
+    color: orangered;
+}
+.img-center{
+    padding: 200px;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.img-center .navbar-secmenu{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.img-center .navbar-secmenu .nav-seclist .nav-secitem{
+    list-style: none;
+    color: white;
+}
+.img-center .navbar-secmenu .nav-seclist .nav-secitem:hover{
+    color: orangered;
+}
+.hero-section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    margin: 0;
+}
+.hero-section .section-content{
+    width: 75%;
+    row-gap: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hero-section .section-content .hero-details{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+.hero-section .section-content .hero-details .details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.hero-section .section-content .hero-details .details .sub-details{
+    padding: 20px;
+    width: 20%;
+}
+.hero-section .section-content .header-content{
+    display: flex;
+    gap: 50px;
+}
+ .section-content .header-content .content-aside{
+    flex: 1;
+    gap: 100px;
+}
+.section-content .header-content .content-section{
+    flex: 1;
+}
+.section-content .header-content .content-aside textarea{
+    width: 99%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.section-content .header-content .content-aside input{
+    width: 99%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.section-content .header-content .content-aside button{
+    justify-content: space-between;
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+    margin-top: 170px;
+    background-color: brown;
+    color: white;
+}
+.footer{
+    margin-top: 100px;
+    height: 500px;
+    background-color: brown;
+}
+.footer .footer-details{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 100px;
+    
+}
+.footer .footer-details .box{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: center;
+}
+.footer .footer-details .box p{
+    color: pink;
+}
+.footer .footer-details .box .link{
+    display: block;
+    color: pink;
+}
+
+@media (max-width: 768px){
+.navbar{
+    flex-direction: column;
+    gap: 20px;
+}
+
+.navbar-menu{
+    flex-direction: column;
+}
+.img-center{
+    padding: 120px 20px;
+    text-align: center;
+}
+.hero-section .section-content{
+    width: 90%;
+}
+
+.hero-section .section-content .hero-details .details{
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hero-section .section-content .hero-details .details .sub-details{
+    width: 100%;
+}
+.hero-section .section-content .header-content{
+    flex-direction: column;
+}
+.section-content .header-content .content-aside button{
+    margin-top: 20px;
+}
+.footer{
+    height: auto;
+}
+
+.footer .footer-details{
+    flex-direction: column;
+    gap: 40px;
+    padding: 50px 20px;
+}
+
+.footer .footer-details .box{
+    width: 100%;
+}
+}
+@media (max-width: 1024px){
+
+.hero-section .section-content{
+    width: 90%;
+}
+
+.hero-section .section-content .hero-details .details{
+    flex-wrap: wrap;
+}
+
+.hero-section .section-content .hero-details .details .sub-details{
+    width: 45%;
+}
+
+}

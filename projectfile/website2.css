@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Miniver&family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+header{
+    background-image: url(/photoshtml/navbarmodel.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 900px;
+}
+/* navbar link */
+header .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+.navbar .navbar-menu{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+@media (max-width: 768px){
+
+.navbar{
+    flex-direction: column;
+    gap: 20px;
+}
+
+.navbar-menu{
+    flex-direction: column;
+}
+}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.navbar .navbarmain .topmodel{
+    color: white;
+}
+.navbar .navbar-menu .nav-list .nav-item{
+    color: white;
+}
+.navbar .navbar-menu .nav-list .nav-item:hover{
+    color: orangered;
+}
+.img-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+    flex-direction: column;
+    gap: 20px;
+}
+.img-center .center{
+    color: white;
+}
+.img-center .large-center{
+    color: white;
+    font-size: 80px;
+}
+.img-center .button{
+    color: white;
+    background-color: brown;
+    width: 100px;
+    height: 30px;
+    border: brown;
+}
+/* .hero-section .section-content .hero-details .searchmodel{
+    display: inline;
+} */
+.hero-section .section-content .hero-details{
+    padding: 30px 20px 30px 20px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+    height: 40px;
+    width: auto;
+    background-color: pink;
+}
+.hero-section .section-content .hero-details .option{
+    width: 15%;
+}
+.hero-section .section-content .hero-details .searchmodel{
+    width: 15%;
+    align-content: center;
+    color: white;
+}
+.hero-section .section-content .hero-details .button{
+    background-color: rgb(147, 50, 50);
+    width: 15%;
+}
+@media (max-width:768px){
+
+.hero-section .section-content .hero-details{
+    flex-direction: column;
+    height: auto;
+    gap: 10px;
+}
+
+.hero-section .section-content .hero-details .option,
+.hero-section .section-content .hero-details .button,
+.hero-section .section-content .hero-details .searchmodel{
+    width: 100%;
+}
+}
+.hero-section .section-contentsec{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-self: center;
+    gap: 20px;
+    margin: 30px 70px 30px 70px;
+    height: 250px;
+}
+@media (max-width:768px){
+
+.hero-section .section-contentsec{
+    flex-direction: column;
+    height: auto;
+}
+}
+.hero-section .section-contentsec .sub-content{
+    height: 100%;
+}
+.hero-section .section-contentsec .sub-content i{
+    font-size: xx-large;
+    align-content: center;
+    background-color: pink;
+    border-radius: 30px;
+    width: 50px;
+    height: 50px;
+}
+.hero-section .section-contentthird{
+    background-image: url(/photoshtml/pretty-stylish-girls-commercia2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 100%;
+    gap: 200px;
+    color: white;
+}
+@media (max-width:768px){
+
+.hero-section .section-contentthird{
+    flex-direction: column;
+    gap: 30px;
+    height: auto;
+    padding: 40px 0;
+}
+}
+.hero-section .agency{
+    margin: 0px 80px 0px 80px;
+    display: flex;
+    flex-direction: row;
+}
+.hero-section .agency .img-aside{
+    background-image: url(/photoshtml/OIP.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+    width: 50%;
+}
+.hero-section .agency .data-aside{
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    z-index: 1;
+    width: 50%;
+    margin-left: 50px;
+}
+@media (max-width:768px){
+
+.hero-section .agency{
+    flex-direction: column;
+}
+
+.hero-section .agency .img-aside,
+.hero-section .agency .data-aside{
+    width: 100%;
+    margin-left: 0;
+}
+}
+.hero-section .written{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 300px;
+}
+.hero-section .group-image{
+    display: grid;
+    overflow: hidden;
+    margin: 30px 30px 180px 30px;
+    grid-template-columns: repeat(3, 1fr);
+}
+@media (max-width:768px){
+
+.hero-section .group-image{
+    grid-template-columns: 1fr;
+}
+
+.hero-section .group-image .cards .modals{
+    height: auto;
+}
+}
+.hero-section .group-image .cards{
+    position: relative;
+}
+.hero-section .group-image .cards div{
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
+.hero-section .group-image .cards .modals{
+    width: 100%;
+    height: 700px;
+}
+.hero-section .small-container{
+    margin: 200px;
+}
+@media (max-width:768px){
+
+.hero-section .small-container .comments{
+    flex-direction: column;
+}
+}
+.hero-section .small-container .comments-heading{
+    text-align: center;
+}
+.hero-section .small-container .comments-heading .ourlatest{
+    color: orangered;
+}
+.hero-section .small-container .comments-heading .pcenter{
+    text-align: center;
+    max-width: 600px;
+    margin: auto;
+}
+.hero-section .small-container .comments{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+}
+.hero-section .small-container .comments .comment{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    gap: 20px;
+}
+.hero-section .small-container .comments .comment img{
+    height: 50px;
+    width: 50px;
+    border-radius: 30px;
+}
+.hero-section .small-container .events{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 40px;
+}
+.hero-section .small-container .events .event-video{
+    width: 50%;
+}
+.hero-section .small-container .events .event-video video{
+    width: 100%;
+    height: 700px;
+}
+.hero-section .small-container .events .event-details{
+    width: 50%;
+    align-items: center;
+}
+@media (max-width:768px){
+
+.hero-section .small-container .events{
+    flex-direction: column;
+}
+
+.hero-section .small-container .events .event-video,
+.hero-section .small-container .events .event-details{
+    width: 100%;
+}
+
+.hero-section .small-container .events .event-video video{
+    height: auto;
+}
+}
+.hero-section .small-container .three-pic{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+@media (max-width:768px){
+
+.hero-section .small-container .three-pic{
+    grid-template-columns: 1fr;
+}
+}
+.hero-section .small-container .three-pic .sub-pic{
+    position: relative;
+    margin-top: 40px;
+}
+
+.hero-section .small-container .three-pic .sub-pic img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+.hero-section .small-container .three-pic .sub-pic .insidepic{
+    position: absolute;
+    bottom: 60px;
+    left: 15px;
+    color: white;
+    font-size: 14px;
+    color: black;
+}
+
+.hero-section .small-container .three-pic .sub-pic .titlepic{
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+}
+
+.hero-section .small-container .three-pic .sub-pic .titlepic h4{
+    margin: 0;
+}
+.footer{
+    height: 500px;
+    background-color: rgb(216, 90, 90);
+}
+.footer .footer-details{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 100px;
+    
+}
+.footer .footer-details .box{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: center;
+}
+.footer .footer-details .box h4{
+    color: white;
+}
+.footer .footer-details .box p{
+    color: pink;
+}
+.footer .footer-details .box .link{
+    display: block;
+    color: pink;
+}
+.footer .lastline{
+    text-align: center;
+    color: pink;
+}
+@media (max-width:768px){
+
+.footer{
+    height: auto;
+}
+
+.footer .footer-details{
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer .footer-details .box{
+    width: 100%;
+    text-align: center;
+}
+}
